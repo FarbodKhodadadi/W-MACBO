@@ -1,0 +1,5 @@
+-r ../requirements.txt
+scipy>=1.11,<1.15
+nbformat>=5.9
+nbclient>=0.9
+ipython>=8.20,<9

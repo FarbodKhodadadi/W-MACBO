@@ -1,0 +1,12 @@
+{
+  "access_date": "2026-09-30",
+  "implementation_status": "adapted equation-based research baselines; not exact published experiment reproductions",
+  "sources": [
+    {"method":"kinodynamic_rrt_star", "doi":"10.1109/CDC.2010.5717430", "url":"https://dspace.mit.edu/entities/publication/ddde796f-c2d8-4ad7-b0fa-d717f91a0861", "access":"MIT metadata and abstract read; PDF link retrieval unsuccessful", "adaptation":"RRT* parent/rewire paradigm with bounded wheel rotate-drive-rotate steering; no asymptotic-optimality claim"},
+    {"method":"clf_cbf_qp", "doi":"10.1109/IECON51785.2023.10312269", "url":"https://arxiv.org/html/2307.08227v1", "access":"author preprint full text", "equations":[11,16,18,24], "adaptation":"static circular barriers; circumscribed circles for polygons; offset-radius inflation for center safety; wheel constraints"},
+    {"method":"nmpc", "doi":"10.18196/jrc.v5i1.20615", "url":"https://journal.umy.ac.id/index.php/jrc/article/download/20615/8926", "access":"publisher full PDF", "equations":[9,10,11,12,14], "adaptation":"omniwheel/LiDAR replaced by differential drive and known occupied-set geometry; numerical direct shooting"},
+    {"method":"mpc_dhocbf", "doi":"10.23919/ACC63710.2025.11107805", "url":"https://calinbelta.com/wp-content/uploads/2026/03/Safety-Critical_Planning_and_Control_for_Dynamic_Obstacle_Avoidance_Using_Control_Barrier_Functions.pdf", "access":"author-hosted full PDF", "equations":[14,16,17], "adaptation":"wheel-speed model and convex-component barriers; sequential convex QPs with hard recursions instead of occupancy polytopes and multiplicative relaxation"},
+    {"method":"hj_reach_avoid", "doi":"10.1109/CDC57313.2025.11312765", "url":"https://arxiv.org/html/2505.09058v1", "access":"author preprint full text", "equations":[5,6,12,13], "adaptation":"single static finite-horizon target; sampled-control semi-Lagrangian HJ and finite-step admissibility; additional joint VI compatibility; no R-CLVF stabilization"},
+    {"method":"composite_mpc", "doi":"10.1016/j.ejcon.2026.101666", "url":"https://www.sciencedirect.com/science/article/pii/S0947358026002190", "access":"publisher abstract, introduction, and section snippets; complete article unavailable", "adaptation":"supplied static soft-min equation over smooth convex components; shared scalar slack and hard physical safety; full terminal/slack construction not reproduced"}
+  ]
+}
