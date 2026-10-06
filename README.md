@@ -934,3 +934,10 @@ For comparisons against the literature baselines, please also cite the original 
 ## Contact
 
 For questions about the implementation, benchmark configuration, or reproduction of the reported experiments, please use the repository issue tracker or contact the authors of the accompanying paper.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE)
+file for details.
